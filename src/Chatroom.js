@@ -38,19 +38,22 @@ class Chatroom extends React.Component{
         }
     }
 
-// <div className="display-message-img">
+
     render(){
         return(
-            <div className="chat-container" ref={elem => this.elem = elem}>
-
-                    <textarea rows="8" cols="20"   onChange={this.handleChange} value={this.state.value} onKeyPress={this.handleKeyPress}>
+            <div>
+                <div id="textarea-chat-container">
+                    <textarea rows="8" cols="40" id="chat-text-box"  onChange={this.handleChange} value={this.state.value} onKeyPress={this.handleKeyPress}>
                     </textarea>
-                    <div className="display-messages">
-                        {this.props.chatMessages &&
-                        this.props.chatMessages.map((msg) => <p><img src={msg.image} />
-                         <span>{msg.firstname}</span> wrote: {msg.message }</p>)}
-                    </div>
+                </div>
+                <div className="chat-container" ref={elem => this.elem = elem}>
+                        <div className="display-messages">
+                            {this.props.chatMessages &&
+                            this.props.chatMessages.map((msg) => <p><img src={msg.image} />
+                             <span>{msg.firstname}</span> wrote: {msg.message }</p>)}
+                        </div>
 
+                </div>
             </div>
         )
 
@@ -60,7 +63,7 @@ class Chatroom extends React.Component{
 }
 
 const mapStateToProps = function(state) {
-    console.log('inside MapStateProp',state)
+
     return{
             chatMessages:state.chatMessages,
 
@@ -69,9 +72,3 @@ const mapStateToProps = function(state) {
 
 
 export default connect(mapStateToProps)(Chatroom)
-
-
-
-//inside render
-
-// {this.renderChatMessages()}

@@ -7,8 +7,9 @@ export default class Welcome extends React.Component{
         return (
             <div>
               <div className="welcome">
-                  <h1>Rememebr it</h1>
-                  
+                  <h1>The Gig</h1>
+                  <h3>Join the biggest show</h3>
+
               </div>
                 <div>
                      {this.props.children}

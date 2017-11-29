@@ -8,18 +8,41 @@ html{
     background-size:cover;
 }
 
-
-.registration{
-    /*border: solid white 2px;*/
-    position: relative;
-    width: 280px;
+/*WELCOME*/
+.welcome{
+    width: 600px;
     height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 20px;
+    color:#D7D2DB;
+    font-size:45px;
+    font-weight: bold;
+    font-family: 'Germania One', cursive;
+
+    line-height: 30%;
+}
+
+.welcome h3{
+    color:#6F14C9;
+}
+
+
+/*REGISTRATION*/
+.registration{
+
+    position: relative;
+    width: 320px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     border-radius: 4px;
     margin: 0 auto;
     padding:5px 5px;
-    margin-top: 30px;
+    margin-top: 125px;
 
 }
 
@@ -31,30 +54,31 @@ html{
     margin: 0 auto;
 
 }
-/*REGISTRATION*/
-.registration input{
-    width: 200px;
-    height: 40px;
-    margin-top: 5px;
-    transition:  all .35s ease-in-out;
 
+.registration input{
+    width: 250px;
+    height: 45px;
+    margin-top: 10px;
+    transition:  all .35s ease-in-out;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .registration input:focus{
     /*transition: all 200ms ease-in;*/
-    transform: scale(1.1);
+    transform: scale(1.2);
     /*width: 300px;*/
 
 }
 
 .registration button{
     margin-top: 10px;
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 45px;
     font-weight: bold;
     background-color:#6F14C9;
     font-family: 'Germania One', cursive;
-    font-size: 20px;
+    font-size: 26px;
     cursor: pointer;
 }
 /*LOGIN*/
@@ -71,14 +95,16 @@ html{
 
 }
 .login-container input{
-    width: 200px;
-    height: 40px;
-    margin-top: 5px;
+    width: 250px;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 .login-container button{
     margin-top: 10px;
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 45px;
     font-weight: bold;
     background-color:#6F14C9;
     font-family: 'Germania One', cursive;
@@ -90,34 +116,26 @@ html{
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 45px;
     margin-top:8px;
+    padding-top: 3px;
     /*border:*/
     background-color:#6F14C9;
     color:black;
     font-family: 'Germania One', cursive;
-    font-size: 20px;
+    font-size: 26px;
     cursor: pointer;
     z-index:99999;
 }
 
-/*WELCOME*/
-.welcome{
-    width: 450px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: 20px;
-    color:#D7D2DB;
-    font-size:45px;
-    font-weight: bold;
-    font-family: 'Germania One', cursive;
-    border:solid white 1px;
-    line-height: 30%;
+#error-message{
+    color:red;
+    width: 280px;
+    font-size: 24px;
+    margin-left: 975px;
+    margin-top: -88px;
+    /*border: solid yellow 2px;*/
 }
 
 
@@ -131,26 +149,17 @@ html{
     justify-content:space-between;
     height: 200px;
 }
-/*LOG*/
-/*.logo{
-    width: 80px;
-    text-align: center;
-    border:solid white 4px;
-    margin-top: 38px;
-    margin-left: 25px;
-    font-size:65px;
-    color:#D7D2DB;
-    font-family: 'Germania One', cursive;
-    transform: rotate(-45deg)
-}*/
+
 #logo-img{
     width: 120px;
     height: 120px;
     margin-top: 25px;
     margin-left: 20px;
+    border-radius: 5px;
+
 }
 /*PROFILE IMAGE*/
-.profilePic{
+/*.profilePic{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,19 +169,20 @@ html{
     margin-left: 2px;
     margin-top: -45px;
     color:white;
-}
+    border:solid yellow 3px;
+}*/
 
 #profilePic-container{
     position:absolute;
     width: 200px;
-
-    margin-left:1160px;
-    margin-top: -200px;
+    /*border: solid green 2px;*/
+    left:80%;
+    margin-top: -240px;
 }
 
-.profilePic img{
-    width: 120px;
-    height: 130px;
+#profilePic-container img{
+    width: 160px;
+    height: 170px;
     border:solid white 2px;
     border-radius: 8px;
 }
@@ -216,9 +226,10 @@ color:#711BA5 ;
     border-radius: 8px;
     background:rgba(24, 224, 1,0.5  );
 
-     width: 130px;
+     width: 166px;
      height: 45px;
      font-weight: bold;
+     font-size: 18px;
      font-family: 'Germania One', cursive;
 }
 
@@ -231,20 +242,19 @@ color:#711BA5 ;
 
 
 .userImageAndBio img{
-    width: 200px;
-    height: 210px;
-
+    width: 450px;
+    height: 500px;
+    border-radius: 8px;
 }
 
 .userImageAndBio{
-        position:relative;
-        margin-top: 0;
-        margin-left: 90px;
-        width: 550px;
-        display: flex;
-        height: 400px;
-        color:white;
-        /*border: dotted red 2px;*/
+    position:relative;
+    margin-top: 0;
+    margin-left: 90px;
+    width: 820px;
+    display: flex;
+    height: 450px;
+    color:white;
 }
 .bio-wrapper{
     font-size: 24px;
@@ -266,12 +276,16 @@ color:#711BA5 ;
 
 
 .showBio button{
-    font-size: 18px;
-    margin-left:-10px;
-    width: 80px;
-    height: 30px;
-    font-weight: bold;
-    margin-top:68px;
+    margin-left:35px;
+    margin-top:110px;
+    width: 200px;
+    height: 45px;
+    background-color:#6F14C9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    color:white;
+    border-radius: 5px;
 }
 
 
@@ -344,27 +358,45 @@ color:#711BA5 ;
 
 #allFriends{
     display: flex;
-    background: rgba(231, 219, 232,0.6)  ;
-}
-
-#allFriend img{
-    width: 120px;
-    height: 130px;
-    border-radius: 40%;
+    background: rgba(231, 219, 232,0.6);
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
 
 }
+
 #allFriends img{
-    width: 90px;
-    height: 85px;
-    border-radius: 3px;
+    width: 130px;
+    height: 140px;
+    border-radius: 25px;
     margin-left: 8px;
 }
 
 .friends-container{
-
     display: flex;
     width: 350px;
     margin-left: 80px;
+}
+
+.friends-container h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+#allFriends p {
+    font-family: 'Roboto', sans-serif;
+    font-size:26px;
+}
+
+
+#allFriends button{
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgba(12, 185, 231,0.5)
 }
 /*.pendings-container{
     display: flex;
@@ -394,6 +426,7 @@ color:#711BA5 ;
 #online-container{
     display: flex;
     flex-direction: column;
+    border: solid green 2px;
 }
 
 #online-container img{
@@ -422,14 +455,28 @@ color:#711BA5 ;
     min-height: 350px;
     margin-left: 150px;
 }
+
+#chat-text-box{
+    border:solid black 2px;
+    margin-left: 122px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+#textarea-chat-container{
+    margin-left: 25px;
+    margin-top: 80px;
+
+}
+
 .display-messages{
-    /*border:solid red 2px;*/
-    margin-left: 165px;
-    margin-top: -140px;
+    width: 90%;
+    margin-left: 5px;
     padding:8px;
     display: flex;
     flex-direction: column;
-    background: yellow;
+    /*background: green;*/
+    margin-top: 8px;
 }
 .display-messages p{
     font-family: 'Roboto', sans-serif;

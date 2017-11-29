@@ -49,7 +49,7 @@ export default class Registration extends React.Component {
                     <input type="text" name="email" placeholder="Email" onChange={this.handleChange} value={this.state.email} />
                     <input type="password" name="password" placeholder="Password" onChange={this.handleChange} value={this.state.password} />
                     <button onClick={() => this.handleSubmit()}>Sign-up</button>
-                    <Link className="loginLink" to ='/login' >Sign-in</Link>
+                    <Link className="loginLink" to ='/login' >Login</Link>
                 </div>
                 <div className="registration-error">
                     {this.state.error && <p>Something wrong!</p>}

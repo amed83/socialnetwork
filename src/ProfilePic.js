@@ -1,11 +1,9 @@
 import React from 'react';
 
 export default function ProfilePic (props) {
-    // if (!props.id) {
-    //     return null;
-    // })
+
     return (
-        <div className="profilePic">
+        <div >
             <img
             src={props.image}
             alt={`${props.firstname} ${props.lastname}`}/>

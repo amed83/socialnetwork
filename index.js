@@ -135,7 +135,7 @@ app.post('/login',(req,res)=>{
         const param = [req.body.email]
         const q = 'SELECT * FROM users WHERE email = $1'
         db.query(q, param).then((result) => {
-            const data = result.rows[0];
+            const data = result.rows[0]
             if (data) {
                 checkPassword(req.body.password, data.password).then((doesMatch) => {
                     if (doesMatch) {
@@ -148,6 +148,7 @@ app.post('/login',(req,res)=>{
                             success: true
                         })
                     } else {
+                        console.log('password not match')
                         res.json({
                             success: false
                         })

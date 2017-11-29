@@ -23,10 +23,10 @@ export default class Login extends React.Component{
             email:this.state.email,
             password:this.state.password
         }).then((result) =>{
-
             if(result.data.success){
                 location.replace('/')
             }else{
+                console.log('diocanna');
                 this.setState({
                   error:true
                 })
@@ -44,7 +44,7 @@ export default class Login extends React.Component{
                     <input type = "password" name="password" placeholder="Password"onChange={this.handleChange} value={this.state.password} />
                     <button onClick={() => this.handleSubmit()}>Login <i className="fa fa-sign-in" aria-hidden="true"> </i> </button>
                 </div>
-                {this.state.error && <p>Something wrong</p>}
+                {this.state.error && <h3 id="error-message">Please insert correct data</h3>}
             </div>
         )
     }

@@ -28,7 +28,7 @@ import { Link } from 'react-router'
         }
         return(
             <div>
-              <h3>Friends</h3>
+              <h2>Friends</h2>
                {this.props.friendsList.map(friend =>
                 <div> <p>{friend.firstname} {friend.lastname}</p> <Link id="userprofile" to={'/user/'+friend.id}><img src={friend.image}/></Link>
                   <div className="friendShipbuttons">
@@ -48,7 +48,7 @@ import { Link } from 'react-router'
         }
         return(
             <div >
-                <h3>Someone want to be your friend</h3>
+                <h2>Waiting</h2>
                 {this.props.friendsPending.map(friend =>
                 <div> <p>{friend.firstname} {friend.lastname}</p> <img src={friend.image}/>
                     <div className="friendShipbuttons">
