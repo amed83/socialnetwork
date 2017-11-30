@@ -2,9 +2,9 @@
 
 ## Summary
 
-The Gig is a little social network built with the idea to connect people that want to share information ,images, emotions about their favourite gigs.
-This is a single-page application made with React
-
+The Gig is a social networking application built with the idea to connect people who want to share their experiences and additional information about their favourite gigs.
+This is a single-page application made primarily with React.js.
+****
 
 ## Tech Stack
 * React.js and Redux
@@ -17,10 +17,26 @@ This is a single-page application made with React
 ## Features
 
 * The web application includes a user registration and a login forms.
-* Users can upload their images otherwise a default one will be assigned to them
-* Users can add information about themselves and update it at anytime
-* Users can visit other people page and ask them for friendship.
-* Users can accept friendship requests as well end them
-* Users can see in real-time who are the other online users.
-* A public chat can be used and every a user connects he/she can see the last ten written messages.
+* Users can upload profile pictures, if they'd like, otherwise a default one will be assigned to them
+* Users can add information about themselves and update it at anytime through an update-profile module
+* Similar to other social networking applications, individual users can send friend requests to other members after visiting their respective pages.
 * Users can see a list of friends and friendship request waiting for an answer.
+* Additionally, users are provided the option to either accept / decline friend requests, as well as the option to 'unfriend' members.
+* Users can see in real-time who else is online.
+* A public chatroom can be used where every user who is connected can see the last ten messages of the public conversation.
+
+****
+
+![Social Network Homepage](welcome2.png)
+
+****
+
+![Social Network friendsButton](friendshipButton.png)
+
+****
+
+![Social Network Homepage](friendslist.png)
+
+****
+
+![Social Network Homepage](chat2.png)

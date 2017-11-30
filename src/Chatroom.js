@@ -50,7 +50,7 @@ class Chatroom extends React.Component{
                         <div className="display-messages">
                             {this.props.chatMessages &&
                             this.props.chatMessages.map((msg) => <p><img src={msg.image} />
-                             <span>{msg.firstname}</span> wrote: {msg.message }</p>)}
+                             <span>{msg.firstname}</span>: {msg.message }</p>)}
                         </div>
 
                 </div>
