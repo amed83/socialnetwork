@@ -29,9 +29,9 @@ This is a single-page application made primarily with React.js.
 
 ![Social Network Homepage](welcome2.png)
 
-****
-
-![Social Network friendsButton](friendshipButton.png)
+********************************
+### Send a friendship request
+![Social Network friendsButton](friendshipButton2.png)
 
 ****
 
