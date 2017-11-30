@@ -26,7 +26,7 @@ This is a single-page application made primarily with React.js.
 * A public chatroom can be used where every user who is connected can see the last ten messages of the public conversation.
 
 ****
-
+### Register or Login
 ![Social Network Homepage](welcome2.png)
 
 ********************************
@@ -34,9 +34,9 @@ This is a single-page application made primarily with React.js.
 ![Social Network friendsButton](friendshipButton2.png)
 
 ****
-
+### Friends and "pendings"
 ![Social Network Homepage](friendslist.png)
 
 ****
-
+### Public Chat
 ![Social Network Homepage](chat2.png)
